@@ -37,10 +37,9 @@ feature 'Show page' do
 end
 
 feature 'linking from the index page to the show page' do
-  let(:link_to_student) { FactoryGirl.create(:student) }
-
-  scenario 'index page links to post page' do
+  scenario 'index page links to student page' do
+    linked_student = FactoryGirl.create(:student)
     visit students_path
-    expect(page).to have_link(link_to_student.full_name, href: student_path(link_to_student))
+    expect(page).to have_link(linked_student.to_s, href: student_path(linked_student))
   end
 end
