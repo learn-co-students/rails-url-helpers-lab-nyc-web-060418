@@ -1,4 +1,4 @@
-# Rails URL Helpers Lab 
+# Rails URL Helpers Lab
 
 ## Objectives
 
@@ -19,14 +19,17 @@ In this lab you will be building out the Student management dashboard for the Fl
 
 * A user should be able to click the user's name on the `index` page and be taken to that specific user's `show` page
 
-* Students now have a new boolean attribute called `active`
+
+* Students now have a new boolean attribute called `active` (HINT: You might have to search around for the best way to set a (*ahem*) _default value_.)
 
 * A user should be able to go to `/student/:id/activate` and their `active` attribute toggled to `true` or `false`
 
 
 ## Keep in mind
 
-* Make sure sure the show path is `/student/:id` where the `:id` is a route variable
+
+* Make sure the show path is `/student/:id` where the `:id` is a route variable
+
 
 * Call our Student class instance method `to_s` on each of students on the index page so that each student element contains their first and last name.
 
@@ -38,3 +41,7 @@ In this lab you will be building out the Student management dashboard for the Fl
 * [Reading](https://github.com/learn-co-curriculum/rails-url-helpers-readme)
 
 * [URL Helper Documentation](http://api.rubyonrails.org/classes/ActionView/Helpers/UrlHelper.html)
+
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/rails-url-helpers-lab' title='Rails URL Helpers Lab'>Rails URL Helpers Lab</a> on Learn.co and start learning to code for free.</p>
+
+
